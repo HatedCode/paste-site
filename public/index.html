@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hated's Pastebin</title>
+    <link rel="icon" href="/icon.ico" type="image/x-icon">
+    <meta property="og:title" content="paste.hatedcode.com">
+    <meta property="og:description" content="A basic PasteBin like site for all your Pasting needs">
+    <meta property="og:site_name" content="paste.hatedcode.com">
+    <meta property="og:url" content="https://paste.hatedcode.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://paste.hatedcode.com/public/icon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202020;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: white;
+        }
+        .container {
+            text-align: center;
+            width: 50%;
+            padding: 20px;
+            position: relative;
+        }
+        textarea {
+            width: 100%;
+            height: 750px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            margin-bottom: 0;
+            box-sizing: border-box;
+            border: 2px solid white;
+            border-radius: 4px;
+            background-color: #303030;
+            color: white;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0;
+            padding: 10px;
+            background-color: #404040;
+            border-radius: 8px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        .button-link {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .button-link:hover {
+            background-color: #45a049;
+        }
+
+        .button-special {
+            color: rgb(255, 204, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/create" method="POST">
+            <h1>Create a New Paste</h1>
+            <textarea name="content" placeholder="Paste your text here..."></textarea><br>
+            <div class="footer">
+                <a href="/license/index.html" class="button-link">License</a>
+                <a href="mailto:admin@hatedcode.com" target="_blank" rel="noreferrer" class="button-link button-special">Contact</a>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script>
+        console.log("Developed By HatedCode")
+    </script>
+</body>
+</html>
